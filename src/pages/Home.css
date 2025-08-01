@@ -1,0 +1,394 @@
+.Home_section{
+    
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+     grid-template-columns: repeat(2, 1fr); 
+    align-items: center;
+    gap: 60px;
+    grid-template-areas: 
+  "heronmae homecontent homecontent"
+  ;
+}
+.Home_section .cardcontainerhome{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+max-width: 600px;
+   
+    grid-area: heronmae;
+    padding-right: 20px;
+}
+.herodiv{
+    width: 300px;
+    height: 410px;
+
+    border-radius: 13px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 20px 40px #0000004d;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .1);
+    transition: transform .3s ease, box-shadow .3s ease;
+  
+
+}
+.herodiv:hover{
+  transform: translateY(-3px);
+}
+.herodiv .heroimg_container{
+    width: 200px;
+    height: 200px;
+   
+    /* overflow: hidden; */
+    margin: auto;
+   
+
+    margin-top: 20px;
+ 
+     margin-bottom: 10px;
+   
+     border-radius: 24px;
+      border:  2px solid #e57399;
+      overflow: hidden;
+}
+.heroimg_container img{
+    
+    width: 100%;
+     border-radius: 24px;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s linear;
+}
+.heroimg_container img:hover{
+  transform: scale(1.1);
+}
+.socialmeadiabtnhomecontainer{
+    width: 100%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialmeadiabtnhomecontainer span{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+   
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 20px;
+    /* color: palevioletred; */
+    transition: 0.5s linear;
+   
+ border: 1px solid gray;
+     margin-bottom: 20px;
+      transition: all 0.3s linear;
+      color: #e57399;
+}
+.socialmeadiabtnhomecontainer span:hover{
+     background: linear-gradient(135deg, #e57399, #e57399);
+ color: white;
+  transform: translatey(-2px);
+}
+
+.bookmeatingBtn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+.bookmeatingBtn button {
+  width: 70%;
+  padding: 13px;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(135deg, #e57399, #f8bbd0);
+
+   border: 2px solid transparent;
+   transition: all 0.5s linear;
+}
+
+.bookmeatingBtn button:hover {
+  color: white;
+    transform: translatey(-2px);
+background:linear-gradient(135deg, rgba(229, 115, 153, .08), rgba(229, 115, 153, .16));
+
+  border: 2px solid #e57399;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contentconaterhome{
+    width: 90%;
+    grid-area: homecontent;
+   
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 100px;
+    flex-direction: column;
+
+}
+.contentconaterhome .contentconaterhomecontent{
+    width: 100%;
+   
+      display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+.contentconaterhomecontent .hero_name{
+    width: 100%;
+    line-height: 70px;
+    font-size: 4.2em;
+    stroke-width: 200px;
+    font-weight: bold;
+      /* optional text stroke */
+  /* -webkit-text-stroke: 2px #e57399; */
+  color: white;
+}
+.hero_name span{
+    color: #e57399;
+}
+.typeriterdiv{
+    color: white;
+}
+.contentconaterhomecontent p{
+    font-size: 18px;
+    color: white;
+    line-height: 25px;
+}
+.hero_btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+.hero_btns button{
+    width: 200px;    
+    padding: 13px;
+     display: flex;
+     border: none;
+    justify-content: center;
+    align-content: center;
+ gap: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+        
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 12px #ec489940;
+ transition: 0.2s linear;
+    
+}
+.homebtn1{
+background: linear-gradient(135deg, #e57399, #f8bbd0);
+
+}
+.homebtn1:hover{
+    background: linear-gradient(135deg, #f8bbd0, #e57399);
+    box-shadow: 0 4px 12px #ec489940;
+    transform: translateY(-2px);
+   
+}
+.hero_btns .homebtns2:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(229, 115, 153, 0.08),
+    rgba(30, 58, 138, 0.1)
+  ) !important;
+  box-shadow: 0 4px 12px #ec489940;
+  transform: translateY(-2px);
+  
+}
+
+.hero_btns .homebtns2 {
+  box-shadow: 0 4px 12px #ec489926;
+  /* background:linear-gradient(135deg, rgba(30, 58, 138, .1), rgba(229, 115, 153, .08)) !important; */
+  color: #e57399;
+  border: 2px solid #e57399 !important;
+   
+     background:linear-gradient(135deg, rgba(229, 115, 153, .08), rgba(229, 115, 153, .16));
+}
+
+@media (max-width:868px) {
+    
+    .Home_section{
+    
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+     grid-template-columns: repeat(1, 1fr); 
+      
+  grid-template-areas:
+    "heronmae"
+    "homecontent";
+
+    }
+    .Home_section .cardcontainerhome{
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 300px;
+  padding-right: 0px;
+   
+    grid-area: "heronmae";
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+.contentconaterhomecontent .hero_name{
+    width: 100%;
+    line-height: 40px;
+    font-size: 2.4em;
+    stroke-width: 200px;
+    font-weight: bold;
+      /* optional text stroke */
+  /* -webkit-text-stroke: 2px #e57399; */
+  color: white;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 888px) {
+.Home_section .cardcontainerhome{
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 600px;
+   
+    grid-area: heronmae;
+}
+
+.Home_section{
+    
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+   gap: 50px;
+  padding: 20px;
+}
+
+.contentconaterhome{
+    width: 100%;
+    grid-area: homecontent;
+   
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.contentconaterhome .contentconaterhomecontent{
+    width: 100%;
+   
+      display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+.contentconaterhomecontent .hero_name{
+    width: 100%;
+    line-height: 40px;
+    font-size: 2.2em;
+    stroke-width: 200px;
+    font-weight: bold;
+      /* optional text stroke */
+  /* -webkit-text-stroke: 2px #e57399; */
+  color: white;
+}
+.hero_name span{
+    color: #e57399;
+}
+.typeriterdiv{
+    color: white;
+}
+.contentconaterhomecontent p{
+    font-size: 18px;
+    color: white;
+    line-height: 25px;
+}
+.hero_btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+.hero_btns button{
+    width: 230px;    
+    padding: 13px;
+     display: flex;
+     border: none;
+    justify-content: center;
+    align-content: center;
+ gap: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+        
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 12px #ec489940;
+ transition: 0.2s linear;
+    
+}
+.homebtn1{
+background: linear-gradient(135deg, #e57399, #f8bbd0);
+
+}
+.homebtn1:hover{
+    background: linear-gradient(135deg, #f8bbd0, #e57399);
+    box-shadow: 0 4px 12px #ec489940;
+    transform: translateY(-2px);
+   
+}
+.hero_btns .homebtns2:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(229, 115, 153, 0.08),
+    rgba(30, 58, 138, 0.1)
+  ) !important;
+  box-shadow: 0 4px 12px #ec489940;
+  transform: translateY(-2px);
+  
+}
+
+.hero_btns .homebtns2 {
+  box-shadow: 0 4px 12px #ec489926;
+  /* background:linear-gradient(135deg, rgba(30, 58, 138, .1), rgba(229, 115, 153, .08)) !important; */
+  color: #f8fafc;
+  border: 2px solid #e57399 !important;
+   
+     background:linear-gradient(135deg, rgba(229, 115, 153, .08), rgba(229, 115, 153, .16));
+}
+
+}

@@ -1,0 +1,50 @@
+.Footersection {
+  width: 100%;
+  padding:25px 30px;
+
+  color: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
+  margin-top: 50px;
+  background-image: linear-gradient(135deg, rgba(30, 58, 138, .1), rgba(229, 115, 153, .08));
+
+}
+.Footersection p span{
+    color: #e57399;
+}
+.footer-text {
+  /* flex: 1;
+  min-width: 200px;
+  padding: 10px; */
+}
+
+.footerbtns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.footicon {
+  font-size: 20px;
+  color: #f8fafc;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footicon:hover {
+  transform: translateY(-4px);
+  color: #e57399;
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+.Footersection {
+justify-content: center;
+}
+
+}

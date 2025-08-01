@@ -1,0 +1,399 @@
+.ContectSection{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+   
+}
+
+.ContectSectionConatiner{
+    width: 100%;
+    height:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+}
+.ContectSectionConatiner .ContectContainer{
+    width: 85%;
+    min-height: 60vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(15, 23, 42, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .1);
+    box-shadow: 0 10px 30px #020f2680;
+    overflow: hidden;
+    transform: translateY(50px);
+     border-top:4px solid #f8bbd0;
+    
+   
+}
+.Contectnameconatiner{
+    position: relative;
+}
+.Contectnameconatiner h1{
+
+    text-align: center;
+    font-size: 36px;
+   color: #f8fafc;
+   /* position: relative; */
+}
+.Contectnameconatiner p{
+    position: absolute;
+   top: 50px;
+   left: 70px;
+width: 80px;
+height: 6px;
+border-radius: 24px;
+
+background-color: #e57399;
+}
+.contectbtnContainerwhole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+}
+.contectbtnContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 30px;
+    margin: 20px;
+
+}
+.contectbtnContainer span{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #f8fafc;
+     background: rgba(15, 23, 42, .3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(229, 115, 153, .18);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+.contectbtnContainer span::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background-color: #e57399; */
+ background: linear-gradient(to bottom, rgba(229, 115, 153, 0.3), rgba(229, 115, 153, 1));
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 0.5s linear;
+}
+.contectbtnContainer span:hover{
+    transform: translateY(-4px);
+}
+.contectbtnContainer span:hover::after {
+  transform: translateX(0);
+ 
+}
+
+.contectformcontainer{
+    /* width: 50%; */
+    min-height: 500px;
+    box-shadow: 0px 0px 7px #e57399;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+   /* background: rgba(15, 23, 42, .3); */
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    
+}
+.contectformcontainer:hover{
+    transform: translateY(-4px);
+}
+.contectformcontainer form textarea{
+        height: 150px;
+    resize: vertical;
+    min-height: 120px
+
+}
+.contectformcontainer form{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+        max-width: 600px;
+    margin: 0 auto;
+    background: rgba(15, 23, 42, .3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 40px;
+    border: 1px solid rgba(229, 115, 153, .18);
+}
+.tellformcon{
+     width: 100%;
+
+    /* border-radius: 8px; */
+   
+    color: green;
+    font-size: 16px;
+    transition:all .4s cubic-bezier(.175, .885, .32, 1.275);
+    border: 2px solid transparent;
+    min-height: 44px;
+        background: #22c55e1a;
+    border: 1px solid rgba(34, 197, 94, .3);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+    text-align: center
+}
+.tellformcon p{
+
+
+    margin: 0;
+    color: #22c55e;
+    font-size: 14px;
+    font-weight: 500;
+}
+.contectformcontainer form input,.contectformcontainer form textarea{
+      width: 100%;
+
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff1a;
+    color: #f8fafc;
+    font-size: 16px;
+    transition:all .4s cubic-bezier(.175, .885, .32, 1.275);
+    border: 2px solid transparent;
+    min-height: 44px
+    
+}
+label{
+    display: inline-block;
+    margin: 10px 0px;
+    color: #f8fafc;
+}
+.formspace {
+    margin: 20px 0px;
+}
+
+.contectformcontainer form button{
+        background: linear-gradient(135deg,#e57399, #f8bbd0);
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius:12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+    border: none;
+    transition: all .3s ease;
+    min-width: 120px;
+    min-height: 44px;
+    box-shadow: 0 4px 12px #ec489926;
+   
+    color:#f8fafc;
+    text-align: center;
+    margin-top: 35px;
+}
+.contectbtncon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contectformcontainer form button:hover{
+    background: linear-gradient(135deg, #f8bbd0, #e57399);
+    box-shadow: 0 6px 20px #ec489966;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+
+
+.otherwaycontactcontainer{
+    width: 98%;
+      margin-top: 60px;
+    text-align: center;
+    background: rgba(15, 23, 42, .3);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    /* padding: 40px; */
+    padding: 20px;
+    border: 1px solid rgba(229, 115, 153, .18);
+    box-shadow: 0 10px 30px #020f264d;
+    transition: transform 0.5s ease;
+    
+}
+.otherwaycontactcontainer:hover{
+transform: translateY(-5px);
+    box-shadow: 0 0px 12px #e57399;
+    /* border-color: #ec48994d; */
+    background: rgba(15, 23, 42, .3)
+}
+.otherwayconnamecon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+     margin: 10px;
+    
+     padding: 20px;
+}
+.otherwayconnamecon h2{
+    text-align: center;
+    color: #f8fafc;
+        unicode-bidi: isolate
+   
+
+}
+.otherwayconnamecon p{
+   position: absolute;
+   top: 60px;
+ 
+
+width: 80px;
+height: 6px;
+border-radius: 24px;
+
+background-color: #e57399;
+}
+.outer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.contectcardcon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contectcard {
+  background: #ffffff0d;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.contectcard span{
+       width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #f8fafc;
+     background: #e57399;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(229, 115, 153, .18);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+.contectcard h1{
+    color: #f8fafc;
+    font-weight: bold;
+    font-size: 20px;
+}
+.contectcard p{
+    color: #e57399;
+}
+.contectcard p:hover{
+    color: #f8bbd0;
+    text-decoration: underline;
+}
+
+.contectcard:hover {
+
+transform: translateY(-5px);
+    box-shadow: 0 10px 25px #ec489933;
+    border-color: #ec48994d;
+    background: #ffffff14
+}
+.contactothericon{
+  transition: transform 0.3s ease;
+}
+.contectcard:hover .contactothericon {
+    transform: translate(-2px);
+   
+   
+}
+
+
+
+  
+
+ @media  (max-width:768px){
+  .ContectSection {
+padding: 10px;
+
+  }
+  .ContectSectionConatiner{
+padding: 5px;
+  }
+  .ContectSectionConatiner .ContectContainer{
+margin: auto;
+width: 100%;
+padding: 10px;
+  }
+  .contectformcontainer form{
+    padding: 8px;
+
+  }
+  .otherwaycontactcontainer{
+    padding: 0px;
+
+  }
+  .outer-wrapper{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+  }
+
+ 
+} 
+ @media only screen and (min-width:320px) and (max-width:420px){
+
+
+ }
+
+  @media  (min-width:1200px){
+ .contectformcontainer{
+    width: 50%;
+  }
+
+}

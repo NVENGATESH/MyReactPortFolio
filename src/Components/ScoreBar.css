@@ -1,0 +1,12 @@
+.scorebar-container {
+  background-color: #e0e0e0;
+  overflow: hidden;
+  box-shadow: 0 0 3px white;
+  position: relative;
+  margin: auto;
+}
+
+.scorebar-fill {
+  background: linear-gradient(to right, black, black);
+  transition: width 1s ease-in-out;
+}
