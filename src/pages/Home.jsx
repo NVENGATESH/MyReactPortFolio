@@ -11,15 +11,23 @@ import { IoCodeSlashOutline,IoLogoLinkedin  } from "react-icons/io5";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdHomeRepairService,MdOutlineTipsAndUpdates  } from "react-icons/md";
 import nishanthimage from '../assets/nishanth.jpg'
+
+    import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Home(){
 
+
+
+useEffect(() => {
+  AOS.init({ duration: 1000 }); // You can customize options here
+}, []);
 
     return(
 
         <>
       <section className="Home_section">
     <div className="cardcontainerhome">
-    <div className="herodiv">
+    <div className="herodiv" data-aos="fade-up">
     <div className="heroimg_container"><img src={nishanthimage} alt="" /></div>
     <div className="socialmeadiabtnhomecontainer"><span><FaGithub />
 </span><span><IoLogoLinkedin />
