@@ -1,5 +1,6 @@
 
 import React from "react";
+import { useEffect } from 'react';
 // import { Calendar1 } from "../Components/Calendar1";
 import { FaGithub,FaFileDownload,FaInstagram  } from "react-icons/fa";
 import './Home.css'
