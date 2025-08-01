@@ -6,6 +6,8 @@ import Footers from '../Components/Footer'
 import { IoLogoJavascript } from "react-icons/io";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { BiLogoPostgresql } from "react-icons/bi";
+ import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function About() {
