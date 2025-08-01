@@ -15,7 +15,7 @@ export default function About() {
    useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true, // 👈 animation happens only the first time it's visible
+      once: true, 
     });
   }, []);
 
