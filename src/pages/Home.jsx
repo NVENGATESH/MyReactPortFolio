@@ -10,7 +10,7 @@ import Footers from '../Components/Footer'
 import { IoCodeSlashOutline,IoLogoLinkedin  } from "react-icons/io5";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdHomeRepairService,MdOutlineTipsAndUpdates  } from "react-icons/md";
-
+import nishanthimage from '../assets/nishanth.jpg'
 export default function Home(){
 
 
@@ -20,7 +20,7 @@ export default function Home(){
       <section className="Home_section">
     <div className="cardcontainerhome">
     <div className="herodiv">
-    <div className="heroimg_container"><img src="https://i.pinimg.com/736x/ff/ca/40/ffca402af5346409206842bc80397e70.jpg" alt="" /></div>
+    <div className="heroimg_container"><img src={nishanthimage} alt="" /></div>
     <div className="socialmeadiabtnhomecontainer"><span><FaGithub />
 </span><span><IoLogoLinkedin />
 </span><span><FaInstagram  />
