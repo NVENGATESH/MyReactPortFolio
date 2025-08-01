@@ -6,61 +6,64 @@ import { FaBroadcastTower } from "react-icons/fa";
 
 
 import img1 from '../assets/lap.png';
-import img2 from '../assets/lap.png';
-import img3 from '../assets/lap.png';
-import img4 from '../assets/lap.png';
-import img5 from '../assets/lap.png';
+import Artroias from '../assets/Artroias.png';
+import imagineart from '../assets/imagineart.png';
+import Akkatsuki from '../assets/Akkatsuki.png';
+import portfolio from '../assets/portfolio.png';
+import code99 from '../assets/code99.png';
 
 export default function Project() {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const allProjects = [
+  const allProjects =[
+  {
+    title: 'Akatsuki Portal',
+    description: 'A fan-made Akatsuki anime website with character bios, powers, and a dark UI theme.',
+    image: Akkatsuki,
+    tech: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    codeLink: '#',
+    demoLink: '#',
+    extraClass: 'card-1'
+  },
+  {
+    title: 'MyPortfolio',
+    description: 'Responsive React portfolio showcasing projects, skills, and contact form with email integration.',
+    image: portfolio,
+    tech: ['React', 'Tailwind CSS', 'EmailJS'],
+    codeLink: '#',
+    demoLink: '#',
+    extraClass: 'card-2'
+  },
     {
-      title: 'Mukome',
-      description: 'All-in-one journal, sleep tracker & todo app.',
-      image: img1,
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      codeLink: '#',
-      demoLink: '#',
-      extraClass: 'card-1'
-    },
-    {
-      title: 'Taskify',
-      description: 'Minimal task manager with localStorage.',
-      image: img2,
-      tech: ['React', 'CSS'],
-      codeLink: '#',
-      demoLink: '#',
-      extraClass: 'card-2'
-    },
-    {
-      title: 'SleepSync',
-      description: 'Track your sleep cycles and patterns.',
-      image: img3,
-      tech: ['HTML', 'SASS', 'Chart.js'],
-      codeLink: '#',
-      demoLink: '#',
-      extraClass: 'card-3'
-    },
-    {
-      title: 'Java Desk App',
-      description: 'A Java-based desktop note-taking app.',
-      image: img4,
-      tech: ['Java', 'Swing'],
-      codeLink: '#',
-      demoLink: '#',
-      extraClass: 'card-4'
-    },
-    {
-      title: 'React Dashboard',
-      description: 'Responsive dashboard built with React.',
-      image: img5,
-      tech: ['React', 'Tailwind'],
-      codeLink: '#',
-      demoLink: '#',
-      extraClass: 'card-5'
-    },
-  ];
+    title: 'Imagine Art Gallery',
+    description: 'An elegant, responsive art gallery showcasing fantasy art using Bootstrap framework.',
+    image: imagineart,
+    tech: ['HTML', 'CSS', 'Bootstrap'],
+    codeLink: '#',
+    demoLink: '#',
+    extraClass: 'card-3'
+  },
+  {
+    title: 'Code 99',
+    description: 'HTML/CSS/JS based landing page for a coding club. Smooth scroll, modals, and code editor theme.',
+    image: code99,
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    codeLink: '#',
+    demoLink: '#',
+    extraClass: 'card-3'
+  },
+  {
+    title: 'Artorias',
+    description: 'A clean and modern single-page website built with HTML, CSS, and Bootstrap — perfect for showcasing a product or service.',
+    image: Artroias,
+    tech: ['HTML', 'CSS', 'Bootstrap'],
+    codeLink: '#',
+    demoLink: '#',
+    extraClass: 'card-4'
+  }
+
+]
+
 
   const filteredProjects = activeFilter === 'All'
     ? allProjects
