@@ -20,7 +20,7 @@ export default function Home(){
 
 
 useEffect(() => {
-  AOS.init({ duration: 1000 }); // You can customize options here
+  AOS.init({ duration: 1000,once: true,}); // You can customize options here
 }, []);
 
     return(
