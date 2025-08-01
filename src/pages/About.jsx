@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useState,useEffect } from 'react'; 
 import './About.css';
 import ScoreBar from "../Components/ScoreBar";
 import { FaGithub,FaHtml5,FaCss3,FaJsSquare,FaReact,FaJava      } from "react-icons/fa";
@@ -10,13 +10,19 @@ import { BiLogoPostgresql } from "react-icons/bi";
 
 export default function About() {
   const [hovered, setHovered] = useState(false);
+   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true, // 👈 animation happens only the first time it's visible
+    });
+  }, []);
 
   return (
      <>
     <section className="AboutSection">
       <div className="aboutSectionContainer">
         <div className="AboutConttentContaner">
-          <div className="AboutContent">
+          <div className="AboutContent" data-aos="fade-right">
             <h1>Get to <span>know</span> me!</h1>
             <div className='abcontent'>
               <p>Hi, my name is <span>Vengatesh N</span> and I'm from Chennai, India. I'm a <span>Frontend and Full Stack Web Developer</span> with a <span>B.E in Computer Science and Engineering</span>.</p>
@@ -30,7 +36,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="ExperienceContainer">
+          <div className="ExperienceContainer" data-aos="fade-up-left">
             <div className='experience experice1'>
               <h2>0 <sup>+</sup></h2>
               <p>Year Experience</p>
@@ -54,7 +60,8 @@ export default function About() {
             <div
               className='skill skill1'
               onMouseEnter={() => setHovered(true)}     // ✅ set hovered on hover in
-              onMouseLeave={() => setHovered(false)}   // ✅ reset on hover out
+              onMouseLeave={() => setHovered(false)} 
+                 data-aos="zoom-in-up"
             >
               <span><FaHtml5 /></span>
               <div className='skilnamesansscre'>
@@ -70,7 +77,8 @@ export default function About() {
             <div
               className='skill skill1'
               onMouseEnter={() => setHovered(true)}     // ✅ set hovered on hover in
-              onMouseLeave={() => setHovered(false)}   // ✅ reset on hover out
+              onMouseLeave={() => setHovered(false)} 
+              data-aos="zoom-in-up"  // ✅ reset on hover out
             >
               <span><FaCss3  /></span>
               <div className='skilnamesansscre'>
@@ -86,7 +94,8 @@ export default function About() {
             <div
               className='skill skill1'
               onMouseEnter={() => setHovered(true)}     // ✅ set hovered on hover in
-              onMouseLeave={() => setHovered(false)}   // ✅ reset on hover out
+              onMouseLeave={() => setHovered(false)}  
+              data-aos="zoom-in-up" // ✅ reset on hover out
             >
               <span><IoLogoJavascript  /></span>
               <div className='skilnamesansscre'>
@@ -102,7 +111,8 @@ export default function About() {
             <div
               className='skill skill1'
               onMouseEnter={() => setHovered(true)}     // ✅ set hovered on hover in
-              onMouseLeave={() => setHovered(false)}   // ✅ reset on hover out
+              onMouseLeave={() => setHovered(false)} 
+              data-aos="zoom-in-up"  // ✅ reset on hover out
             >
               <span><FaReact  /></span>
               <div className='skilnamesansscre'>
@@ -118,7 +128,8 @@ export default function About() {
             <div
               className='skill skill1'
               onMouseEnter={() => setHovered(true)}     // ✅ set hovered on hover in
-              onMouseLeave={() => setHovered(false)}   // ✅ reset on hover out
+              onMouseLeave={() => setHovered(false)}
+              data-aos="zoom-in-up"   // ✅ reset on hover out
             >
               <span><FaJava  /></span>
               <div className='skilnamesansscre'>
@@ -134,7 +145,8 @@ export default function About() {
             <div
               className='skill skill1'
               onMouseEnter={() => setHovered(true)}     // ✅ set hovered on hover in
-              onMouseLeave={() => setHovered(false)}   // ✅ reset on hover out
+              onMouseLeave={() => setHovered(false)}
+              data-aos="zoom-in-up"   // ✅ reset on hover out
             >
               <span><BiLogoSpringBoot /></span>
               <div className='skilnamesansscre'>
@@ -150,7 +162,8 @@ export default function About() {
             <div
               className='skill skill1'
               onMouseEnter={() => setHovered(true)}     // ✅ set hovered on hover in
-              onMouseLeave={() => setHovered(false)}   // ✅ reset on hover out
+              onMouseLeave={() => setHovered(false)}
+              data-aos="zoom-in-up"   // ✅ reset on hover out
             >
               <span><BiLogoPostgresql /></span>
               <div className='skilnamesansscre'>
@@ -163,7 +176,8 @@ export default function About() {
              <div
               className='skill skill1'
               onMouseEnter={() => setHovered(true)}     // ✅ set hovered on hover in
-              onMouseLeave={() => setHovered(false)}   // ✅ reset on hover out
+              onMouseLeave={() => setHovered(false)} 
+              data-aos="zoom-in-up"  // ✅ reset on hover out
             >
               <span><FaGithub /></span>
               <div className='skilnamesansscre'>
