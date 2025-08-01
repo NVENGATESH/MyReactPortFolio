@@ -1,6 +1,6 @@
 .Home_section{
     
-    height: 80vh;
+    min-height: 100vh;
     display: grid;
     justify-content: center;
      grid-template-columns: repeat(2, 1fr); 
@@ -240,7 +240,7 @@ background: linear-gradient(135deg, #e57399, #f8bbd0);
     
     .Home_section{
     
-    height: 80vh;
+   min-height: 100vh;
     display: grid;
     justify-content: center;
      grid-template-columns: repeat(1, 1fr); 
@@ -285,7 +285,7 @@ max-width: 600px;
 
 .Home_section{
     
-    height: 80vh;
+     min-height: 100vh;
     display: grid;
     justify-content: center;
    gap: 50px;

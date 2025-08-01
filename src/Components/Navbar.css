@@ -100,7 +100,7 @@ width: 100%;
   transition: all 0.3s ease;
   border: 2px solid transparent; 
    color: #adabad;
-  /* display: inline-block; */
+  display: inline-block;
 
 }
 
@@ -143,15 +143,16 @@ width: 100%;
   }
 
   .navitem a {
-    padding: 10px;
+    padding: 10px 50px;
     border-radius: 12px;
     display: block;
+    color: #e57399;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
 
   .navitem:active {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(15, 23, 42, .3);
     transform: scale(0.97);
-    border: 1px solid #00bcd4;
+    border: 1px solid #f8bbd0;
   }
 }
