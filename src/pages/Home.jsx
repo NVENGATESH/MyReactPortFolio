@@ -40,7 +40,7 @@ useEffect(() => {
 
     </div>
 </div>
-<div className="contentconaterhome">
+<div className="contentconaterhome" data-aos="fade-left">
     <div className="contentconaterhomecontent" >
     <h1 className="hero_name">Hi, I'm <span>Nishanth NavaNeethakannan</span></h1>
     <div className="typeriterdiv">
