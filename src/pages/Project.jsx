@@ -11,6 +11,7 @@ import imagineart from '../assets/imagineart.png';
 import Akkatsuki from '../assets/Akkatsuki.png';
 import portfolio from '../assets/portfolio.png';
 import code99 from '../assets/code99.png';
+import Todo from '../assets/Todo.png';
 
 export default function Project() {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -60,7 +61,16 @@ export default function Project() {
     codeLink: '#',
     demoLink: '#',
     extraClass: 'card-4'
-  }
+  },
+  {
+  title: 'Todo App',
+  description: 'A full-stack Todo app with a Java Spring Boot backend. It includes login with JWT, REST APIs, and task saving.',
+  image: Todo,
+  tech: ['Java', 'Spring Boot', 'HTML', 'CSS', 'JavaScript'],
+  codeLink: '#',
+  demoLink: '#',
+  extraClass: 'card-4'
+}
 
 ]
 
