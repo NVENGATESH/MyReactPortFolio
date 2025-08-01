@@ -32,15 +32,15 @@ export default function About() {
 
           <div className="ExperienceContainer">
             <div className='experience experice1'>
-              <h2>3 <sup>+</sup></h2>
+              <h2>0 <sup>+</sup></h2>
               <p>Year Experience</p>
             </div>
             <div className='experience experice1'>
-              <h2>20 <sup>+</sup></h2>
+              <h2>10 <sup>+</sup></h2>
               <p>Project Completed</p>
             </div>
             <div className='experience experice1'>
-              <h2>13 <sup>+</sup></h2>
+              <h2>3 <sup>+</sup></h2>
               <p>Certificates</p>
             </div>
           </div>
