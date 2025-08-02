@@ -1,4 +1,4 @@
-/* Base navbar styles
+/* Base navbar styles */
 .navbar {
   height: 60px;
   padding: 0 4%;
@@ -11,31 +11,9 @@
   z-index: 9999;
   user-select: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
-} */
-.navbar {
- height: 60px;
-  padding: 0 4%;
-  backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;   /* ✅ FIXED! */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  user-select: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+  transition: background-color 0.3s ease;
 }
-/* SCROLLED NAVBAR EFFECT */
-.navbar.scrolled {
-  background-color: rgba(15, 23, 42, 0.6); /* translucent dark */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px); /* stronger blur */
-  transition: all 0.3s ease;
-}
+
 
 .navlogo h2 {
   margin: 0;

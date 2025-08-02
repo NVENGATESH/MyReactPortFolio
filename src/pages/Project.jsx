@@ -1,5 +1,5 @@
 import './Project.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footers from '../Components/Footer';
 import ProjectCard from '../Components/ProjectCard';
 import { FaBroadcastTower } from 'react-icons/fa';
@@ -12,8 +12,29 @@ import portfolio from '../assets/portfolio.png';
 import code99 from '../assets/code99.png';
 import Todo from '../assets/Todo.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// ✅ List of all AOS animations
+const aosAnimations = [
+  'fade', 'fade-up', 'fade-down', 'fade-left', 'fade-right',
+  'fade-up-right', 'fade-up-left', 'fade-down-right', 'fade-down-left',
+  'flip-up', 'flip-down', 'flip-left', 'flip-right',
+  'slide-up', 'slide-down', 'slide-left', 'slide-right',
+  'zoom-in', 'zoom-in-up', 'zoom-in-down', 'zoom-in-left', 'zoom-in-right',
+  'zoom-out', 'zoom-out-up', 'zoom-out-down', 'zoom-out-left', 'zoom-out-right'
+];
+
+const getRandomAOS = () => {
+  return aosAnimations[Math.floor(Math.random() * aosAnimations.length)];
+};
+
 export default function Project() {
   const [activeFilter, setActiveFilter] = useState('All');
+
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   const allProjects = [
     {
@@ -23,7 +44,8 @@ export default function Project() {
       tech: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
       codeLink: '#',
       demoLink: '#',
-      extraClass: 'card-1'
+      extraClass: 'card-1',
+      aos: getRandomAOS()
     },
     {
       title: 'MyPortfolio',
@@ -32,7 +54,8 @@ export default function Project() {
       tech: ['React', 'Tailwind CSS', 'EmailJS'],
       codeLink: '#',
       demoLink: '#',
-      extraClass: 'card-2'
+      extraClass: 'card-2',
+      aos: getRandomAOS()
     },
     {
       title: 'Imagine Art Gallery',
@@ -41,16 +64,18 @@ export default function Project() {
       tech: ['HTML', 'CSS', 'Bootstrap'],
       codeLink: '#',
       demoLink: '#',
-      extraClass: 'card-3'
+      extraClass: 'card-3',
+      aos: getRandomAOS()
     },
     {
       title: 'Code 99',
-      description: 'HTMLCSSJS based landing page for a coding club. Smooth scroll, modals, and code editor theme.',
+      description: 'HTML/CSS/JS based landing page for a coding club. Smooth scroll, modals, and code editor theme.',
       image: code99,
       tech: ['HTML', 'CSS', 'JavaScript'],
       codeLink: '#',
       demoLink: '#',
-      extraClass: 'card-3'
+      extraClass: 'card-3',
+      aos: getRandomAOS()
     },
     {
       title: 'Artorias',
@@ -59,7 +84,8 @@ export default function Project() {
       tech: ['HTML', 'CSS', 'Bootstrap'],
       codeLink: '#',
       demoLink: '#',
-      extraClass: 'card-4'
+      extraClass: 'card-4',
+      aos: getRandomAOS()
     },
     {
       title: 'Todo App',
@@ -68,7 +94,8 @@ export default function Project() {
       tech: ['Java', 'Spring Boot', 'HTML', 'CSS', 'JavaScript'],
       codeLink: '#',
       demoLink: '#',
-      extraClass: 'card-4'
+      extraClass: 'card-4',
+      aos: getRandomAOS()
     }
   ];
 
@@ -97,10 +124,13 @@ export default function Project() {
       <div className="project-wrapper">
         <div className="project-grid">
           {filteredProjects.map((proj, index) => (
-            <ProjectCard key={index} {...proj} />
+            <div key={index} data-aos={proj.aos}>
+              <ProjectCard {...proj} />
+            </div>
           ))}
         </div>
       </div>
+
       <Footers />
     </>
   );
