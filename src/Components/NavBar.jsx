@@ -16,6 +16,7 @@ export default function NavBar() {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const closeMenu = () => setMenuOpen(false);
   const isActive = (path) => location.pathname === path;
+  const [isScrolled, setIsScrolled] = useState(false);
 
   //  Click outside to close menu
   useEffect(() => {
@@ -28,8 +29,25 @@ export default function NavBar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [menuOpen]);
 
+  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // if scroll passed 100px
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+   <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+
       <div className="navlogo">
         <Link to="/" onClick={closeMenu}>
           <h2>NJ</h2>
