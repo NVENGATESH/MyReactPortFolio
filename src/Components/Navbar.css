@@ -156,3 +156,13 @@ width: 100%;
     border: 1px solid #f8bbd0;
   }
 }
+
+
+.navlogo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navlogo a:visited {
+  color: inherit;
+}

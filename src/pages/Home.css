@@ -392,3 +392,12 @@ background: linear-gradient(135deg, #e57399, #f8bbd0);
 }
 
 }
+
+.homebtn1 a,.homebtns2 a,.Home_section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.homebtn1 a:visited,.homebtns2 a:visited,.Home_section a {
+  color: inherit;
+}

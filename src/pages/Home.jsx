@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect } from 'react';
 // import { Calendar1 } from "../Components/Calendar1";
 import { FaGithub,FaFileDownload,FaInstagram  } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 import './Home.css'
 import { CiCalendarDate } from "react-icons/ci";
 import TypeEffect from '../Components/TypeEffect';
@@ -11,7 +12,7 @@ import Footers from '../Components/Footer'
 import { IoCodeSlashOutline,IoLogoLinkedin  } from "react-icons/io5";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { MdHomeRepairService,MdOutlineTipsAndUpdates  } from "react-icons/md";
-import nishanthimage from '../assets/nishanth.jpg'
+import courimagrmy from '../assets/courimagrmy.jpg'
 
     import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -29,8 +30,8 @@ useEffect(() => {
       <section className="Home_section">
     <div className="cardcontainerhome">
     <div className="herodiv" data-aos="fade-up">
-    <div className="heroimg_container"><img src={nishanthimage} alt="" /></div>
-    <div className="socialmeadiabtnhomecontainer"><span><FaGithub />
+    <div className="heroimg_container"><img src={courimagrmy} alt="" /></div>
+    <div className="socialmeadiabtnhomecontainer"><span><a href="https://github.com/NVENGATESH" target="_blank"><FaGithub /></a>
 </span><span><IoLogoLinkedin />
 </span><span><FaInstagram  />
 </span></div>
@@ -48,10 +49,14 @@ useEffect(() => {
     </div>
     <p>Frontend Developer & Designer passionate about building beautiful, user-focused web experiences.</p>
     <div className="hero_btns">
-        <button className="homebtn1"><CiUser />About me</button>
+        <button className="homebtn1"><CiUser/><Link to="/about">About me</Link></button>
+        
         <button  className="homebtn1"><FaFileDownload />Resume</button>
-        <button  className="homebtn1"><IoCodeSlashOutline />Portfolio</button>
-        <button className="homebtns2"><BsEnvelopeFill /> Conatct</button>
+        <button  className="homebtn1"><IoCodeSlashOutline /><a href="https://portfolio-nishanth-two.vercel.app/" target="_blank" rel="noreferrer">
+  Portfolio
+</a></button>
+
+        <button className="homebtns2"><BsEnvelopeFill /> <Link to="/contact"> Contact</Link></button>
         <button className="homebtns2"><MdHomeRepairService />Service</button>
         <button className="homebtns2"><MdOutlineTipsAndUpdates />Update</button></div>
 </div>

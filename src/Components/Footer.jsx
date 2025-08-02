@@ -19,6 +19,15 @@ export default function Footers() {
           <FaEnvelope className="footicon" />
      
       </div>
+     <button
+  className="gototop"
+  onClick={() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }}
+>
+  ↑
+</button>
+
     </footer>
   );
 }
