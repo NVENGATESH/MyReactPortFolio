@@ -32,8 +32,9 @@ useEffect(() => {
     <div className="herodiv" data-aos="fade-up">
     <div className="heroimg_container"><img src={courimagrmy} alt="" /></div>
     <div className="socialmeadiabtnhomecontainer"><span><a href="https://github.com/NVENGATESH" target="_blank"><FaGithub /></a>
-</span><span><IoLogoLinkedin />
-</span><span><FaInstagram  />
+</span><span> <a href="https://www.linkedin.com/in/vengatesh-n1012/" target="_blank"><IoLogoLinkedin /></a>
+</span><span> <a href="#" target="_blank"><FaInstagram  /></a>
+
 </span></div>
  <div className="bookmeatingBtn">
   <button className="bookme"><CiCalendarDate /> Book Me</button>
