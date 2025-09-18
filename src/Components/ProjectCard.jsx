@@ -1,31 +1,3 @@
-// import './ProjectCard.css';
-// import lap from '../assets/lap.png';
-// import { FaGithub } from "react-icons/fa";
-
-// export default function ProjectCard() {
-//   return (
-//     <>
-//       <div className='projectCardConatiner'>
-//         <div className='projectimageconatiner'>
-//           <img src={lap} alt="Screenshot of Akkatsuki project" />
-//         </div>
-//         <h1>Akkatsuki</h1>
-//         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veritatis mi!veritatis</p>
-        
-//         <div className='projectteckstacks'>
-//           <span>html</span>
-//         </div>
-        
-//         <div className='projectBtn'>
-//           <button className='btn btn_primary'><FaGithub />Source Code</button>
-//           <button className='btn'><FaGithub />Live Demo</button>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-
 
 import './ProjectCard.css';
 import { FaGithub,FaBroadcastTower } from "react-icons/fa";
